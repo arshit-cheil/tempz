@@ -1,20 +1,21 @@
 .featureIconContainer {
     display: flex;
-    padding: 16px 48px;
+    padding: 0px 6.6vw;
     align-items: flex-start;
-    gap: 95px;
+    flex-direction: column;
+    gap: 12px;
     
     .featureIconItem {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
 
         .featureIconImageContainer {
             // border: 1px;
             // border-color: red;
             // border-style: solid;
-            width: 4vw;
-            height: 4vw;
+            width: 7vw;
+            height: 7vw;
             display: flex;
             justify-content: center;
 
@@ -39,9 +40,10 @@
                 // border: 1px;
                 // border-color: blue;
                 // border-style: solid;
-                width: 4vw;
-                padding-top: 10px;
-                text-align: center;
+                width: auto;
+                padding-top: 0;
+                padding-left: 6.6vw;
+                text-align: left;
                 font-size: 14px;
 
                 .tooltiptext {
