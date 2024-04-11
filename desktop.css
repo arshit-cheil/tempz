@@ -1,0 +1,98 @@
+.featureIconContainer {
+    display: flex;
+    padding: 16px 48px;
+    align-items: flex-start;
+    gap: 95px;
+    
+    .featureIconItem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .featureIconImageContainer {
+            // border: 1px;
+            // border-color: red;
+            // border-style: solid;
+            width: 4vw;
+            height: 4vw;
+            display: flex;
+            justify-content: center;
+
+            img {
+                // border: 3px;
+                // border-color: green;
+                // border-style: solid;
+                margin: auto;
+                
+            }
+
+            .featureIcon {
+                max-width: 100%;
+            }
+        }
+
+        .tooltip {
+            position: relative !important;
+            display: inline-block;
+
+            p {
+                // border: 1px;
+                // border-color: blue;
+                // border-style: solid;
+                width: 4vw;
+                padding-top: 10px;
+                text-align: center;
+                font-size: 14px;
+
+                .tooltiptext {
+                    visibility: hidden;
+                    display: inline-block;
+                    position: absolute !important;
+                    background: #fff;
+                    border: 1px solid #777777;
+                    text-decoration: none;
+                    border-radius: 2px;
+                    padding: 20px;
+                    margin-top: 34px;
+                    margin-left: -48px;
+                    width: 11vw;
+                    z-index: 9999;
+                }
+
+                .tooltiptext:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 16px;
+                    bottom: 100%;
+                    width: 0;
+                    height: 0;
+                    border: 10px solid transparent;
+                    border-bottom-color: black;
+                }
+                
+                .tooltiptext:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 17px;
+                    bottom: 100%;
+                    width: 0;
+                    height: 0;
+                    border: 9px solid transparent;
+                    border-bottom-color: white;
+                }
+            }
+        }
+
+       
+    }
+
+    .featureIconItem:hover {
+        p {
+            .tooltiptext {
+                visibility: visible;
+            }
+        }
+    }
+}
